@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------*/
+
+.lixi{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lx__nap{
+    width: 460px;
+    max-width: 20%;
+    transform: translateX(-105px);
+    height: 0px;
+    max-height: 80vh;
+    z-index: 2;
+    border-top-left-radius: 600px;
+    border-top-right-radius: 600px;
+    border-bottom: 2px solid #ccc;
+    transition: all .5s linear;
+}
+.lx__container{
+    width: 530px;
+    height: 800px;
+    max-width: 80%;
+    max-height: 70vh;
+    background-color: #f80404;
+    box-shadow: 2px -2px 12px #707070;
+    border-radius: 4px;
+    z-index: 1;
+    transition: all .5s linear;
+    position: relative;
+    transform: translateX(-32px);
+}
+.lx__container--nap{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #efe9a5;
+    box-shadow: 2px 2px 12px #929292;
+    border-bottom-left-radius: 600px;
+    border-bottom-right-radius: 600px;
+    transition: all .5s linear;
+}
+.lx__container--content{
+    position: absolute;
+    top: 80px;
+}
+.lx--hder{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    flex-direction: row;
+    font-size: .8rem;
+    width: 540px;
+    height: 167px;
+}
+.lx__container--content .lx--hder h2{
+    font-size: 8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fef2ca;
+    text-align: center;
+    margin-top: 12px;
+}
+.lx__container--content .lx--hder .lx--hder--red{
+    padding: 8px;
+    background-color: #ed1c24;
+    height: 70px;
+    border-radius: 24px;
+    margin-left: 34px;
+    margin-top: 12px;
+}
+.lx__container--content .lx--hder .lx--hder--red ul{
+    list-style-type: none;
+}
+.lx__container--content .lx--hder .lx--hder--red ul li{
+    font-weight: 700;
+    color: #fff;
+    line-height: 14px;
+}
+.lx__container--content .lx--cnt{
+    text-align: center;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4em;
+    color: #fef2ca;
+    margin-top: -24px;
+    margin-left: 10px;    
+}
+.lx__container__dragon{
+    position: absolute;
+    bottom: -44px;
+    width: 100%;
+    height: auto;
+}
+.lx__container__dragon .dragon__png{
+    max-width: 90%;
+    margin-left: 5%;
+}
+.lx__container__dragon .vta{
+    max-width: 60px;
+    position: absolute;
+    right: 24px;
+    top: 76px;
+}
+.lx__container__dragon .vtap{
+    max-width: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+}
+.lx__container--open{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fef2ca;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.lx__container--open .lx__open{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    background-color: #0d5761;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-weight: 550;
+    color: #fff;    
+}
+.lx_write{
+    width: 130%;
+    height: 0px;
+    background-color: #eae5d2;  
+    margin-top: 70px;
+    margin-left: 4%;
+    transition: all .5s linear;
+    box-shadow: 2px -2px 12px #707070;
+    position: relative;
+    max-height: 850px;
+}
+.br12px{
+    border-radius: 12px;
+}
+.lx_form{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lx_form h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: #ef0b0b;
+    padding: 10px;
+}
+.lx_form h4{
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    font-size: .8em;
+    color: #fff;
+}
